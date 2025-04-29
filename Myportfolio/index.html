@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kunal Kumar Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/93c829266f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header id="header">
+    <div class="container">
+      <nav>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <h1>Hi, I'm <span>Kunal Kumar</span><br />A Web Developer</h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- Profile Picture Section -->
+  <section id="profile-pic" class="profile-pic">
+    <div class="container">
+      <img src="image/userkunal.png" alt="Kunal Kumar" class="profile-img">
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <div class="container">
+      <h1 class="sub-title">About Me</h1>
+      <p>I am a final-year Engineering student with a strong foundation in Java programming and front-end web development. I am passionate about building innovative and efficient applications, and I'm eager to contribute to dynamic development teams.</p>
+
+      <div class="info">
+        <h2>Education</h2>
+        <ul>
+          <li><span>2021-25:</span> B.Tech, Galgotias University (CGPA: 8.48)</li>
+          <li><span>2018-20:</span> 12th, SDS Public School (80%)</li>
+          <li><span>2016-18:</span> 10th, Children Delight School (82.2%)</li>
+        </ul>
+
+        <h2>Skills</h2>
+        <ul>
+          <li>Java, Data Structures & Algorithms (4⭐ on GFG)</li>
+          <li>HTML, CSS, JavaScript, TailwindCSS</li>
+          <li>ReactJS, NodeJS, ExpressJS</li>
+          <li>SQL, Git, GitHub, VS Code</li>
+          <li>Good Communication Skills</li>
+          <li>Adaptability</li>
+          <li>Team Player</li>
+        </ul>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="work-list">
+
+        <div class="work">
+          <img src="image/work-1.jpg" alt="E-commerce Website">
+          <div class="layer">
+            <h3>E-commerce Website</h3>
+            <p>Responsive platform for seamless online shopping.</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="image/sort.png" alt="Sorting Visualizer">
+          <div class="layer">
+            <h3>Sorting Visualizer</h3>
+            <p>Interactive visualizations of sorting and searching algorithms.</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="image/work-4.jpg" alt="Stopwatch">
+          <div class="layer">
+            <h3>Stopwatch</h3>
+            <p>Minimal stopwatch with start, stop, and reset functionality.</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h1 class="sub-title">Contact Me</h1>
+
+      <div class="contact-container">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <p><i class="fa-solid fa-envelope"></i> kumarkunal61603@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +91 8298830404</p>
+
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/kunalkumar19-/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/KunalKumar19"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:kumarkunal61603@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+
+          <a href="image/resume1.pdf" download class="btn btn2">Download CV</a>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <form name="submit-to-google-sheet" id="contact-form">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+            <span id="msg"></span>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-row">
+      <p><i class="fa-solid fa-envelope"></i> kumarkunal61603@gmail.com</p>
+      <p><i class="fa-solid fa-phone"></i> +91 8298830404</p>
+
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/kunalkumar19-/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/KunalKumar19"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:kumarkunal61603@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="container">
+      <p>&copy; 2025 Kunal Kumar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Form Submission Script -->
+  <script>
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById('msg');
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+  
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbx-HjmIZsT3fLkrflDDvi21g0kGe6oB0FD4sAyssYMD952_LZ-4yubIlBdEV1OUu4QDRw/exec'; // replace with your actual URL
+  
+      const formData = new FormData(form);
+  
+      fetch(scriptURL, {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => {
+        if (response.ok) {
+          msg.innerHTML = "Submitted Successfully!";
+          msg.style.color = "green";  // Optional: make success message green
+          setTimeout(() => msg.innerHTML = "", 5000);
+          form.reset();
+        } else {
+          throw new Error('Network response was not ok');
+        }
+      })
+      .catch(error => {
+        msg.innerHTML = "Something went wrong!";
+        msg.style.color = "red"; // Optional: make error message red
+        console.error('Error!', error.message);
+      });
+    });
+  </script>
+  
+  
+  
+
+</body>
+</html>
